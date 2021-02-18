@@ -37,10 +37,10 @@ function App() {
 
   const AddCount1 = useCallback(() => {
     setCount1(prevCount1 => prevCount1 + 1);
-  }, [count1]);
+  }, []);
   const AddCount2 = useCallback(() => {
     setCount2(prevCount2 => prevCount2 + 1);
-  }, [count2]);
+  }, []);
 
   return (
     <AppContext.Provider value={{countProvided: count, dispatchProvided: dispatch}}>
